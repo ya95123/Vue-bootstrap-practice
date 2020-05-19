@@ -10,8 +10,10 @@
   //- Bootstrap Vue 寫法
   b-container
     b-row(align-h="center")
-      b-col(cols="12" md="6" lg="4" xl="3")
-
+      b-col(cols="12" md="6" lg="4" xl="3" v-for="(card,index) in cards" :key="index")
+        b-card(:img-src="card.image" img-top)
+          b-card-text {{card.description}}
+          b-btn(variant="primary" pill :href="card.link") 貼文連結
 </template>
 
 <script>
