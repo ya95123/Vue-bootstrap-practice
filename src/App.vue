@@ -1,27 +1,28 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  //- .container
+  //-   .row
+  //-     .col-3.bg-success
+  //-     .col-3.bg-danger
+  //-     .col-3.bg-warning
+  //-     .col-3.bg-primary
+  b-container(fluid)
+    b-row(align-h="center")
+      b-col.bg-success(cols="12" md="6" lg="3")
+      b-col.bg-danger(cols="12" md="6" lg="3")
+    //- b-col.bg-warning(col="3")
+    //- b-col.bg-primary(col="3")
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
+
 }
 </script>
 
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+<style lang="stylus" scoped>
+  .row div
+    height 300px
 </style>
