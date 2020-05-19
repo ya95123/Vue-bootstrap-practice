@@ -11,6 +11,8 @@ import { faAddressCard, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 // axios 引用
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+// 引用 style 檔
+import './style/style.stylus'
 
 // icon 加入
 library.add(faAddressCard, faArrowUp)
